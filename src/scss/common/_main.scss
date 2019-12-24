@@ -1,0 +1,114 @@
+// Gotham Pro
+
+@font-face {
+    font-family: 'gothamprolight';
+    src: url('../../fonts/GothamPro-Light.woff2') format('woff2'),
+         url('../../fonts/GothamPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothampromedium';
+    src: url('../../fonts/GothamPro-Medium.woff2') format('woff2'),
+         url('../../fonts/GothamPro-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothamprobold';
+    src: url('../../fonts/GothamPro-Bold.woff2') format('woff2'),
+         url('../../fonts/GothamPro-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+body, html {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    flex-direction: column;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+// ::-webkit-scrollbar {
+//     width: 0;
+//     background: transparent;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     width: 0;
+//     background: transparent;
+// }
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+input, select, textarea {
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    line-height: normal;
+}
+
+// ---------------------
+body {
+    background-color: $color-grey;
+    font-size: 16px;
+    font-family: $font-main, sans-serif;
+    color: $color-main;
+}
+
+.title {
+    font-family: $font-bold, sans-serif;
+    font-size: 48px;
+    color: #fff;
+
+    span {
+        color: $color-yellow;
+    }
+}
+
+.subtitle {
+    font-family: $font-bold, sans-serif;
+    font-size: 24px;
+    color: #fff;
+}
+
+.button {
+
+    a {
+        display: block;
+        font-family: $font-bold, sans-serif;
+        background: #F8DE15;
+        box-shadow: 0px 32px 80px rgba(248, 222, 21, 0.24);
+        border-radius: 3px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+}
