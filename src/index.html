@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
     <!-- Slick Slider -->
     <link rel="stylesheet" type="text/css" href="css/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css" />
@@ -144,16 +150,16 @@
                     <div class="hero__item">
                         <div class="hero__card">
                             <div class="hero__card-img">
-                                <img src="img/hero-bg-1.png" alt="image">
+                                <img src="img/hero-bg-1-1.jpg" alt="image">
                             </div>
                             <div class="hero__card-desc">
-                                <div class="hero__card-title title">
+                                <div class="hero__card-title title animated fadeInUp">
                                     Выезд специалиста для осмотра <span>бесплатно</span>
                                 </div>
-                                <div class="hero__card-subtitle subtitle">
+                                <div class="hero__card-subtitle subtitle animated fadeInUp delay-2s">
                                     Узнай стоимость за несколько минут
                                 </div>
-                                <div class="hero__card-button button">
+                                <div class="hero__card-button button animated fadeInUp delay-3s">
                                     <a href="#">Узнать</a>
                                 </div>
                             </div>
@@ -169,13 +175,13 @@
                                 <img src="img/hero-bg-2.png" alt="image">
                             </div>
                             <div class="hero__card-desc">
-                                <div class="hero__card-title title">
+                                <div class="hero__card-title title wow fadeInUp">
                                     Более 20 единиц собственной <span>техники</span>
                                 </div>
-                                <div class="hero__card-subtitle subtitle">
+                                <div class="hero__card-subtitle subtitle wow fadeInUp delay-2s">
                                     Приступим к работе в день заказа
                                 </div>
-                                <div class="hero__card-button button">
+                                <div class="hero__card-button button wow fadeInUp delay-3s">
                                     <a href="#">Заказать</a>
                                 </div>
                             </div>
@@ -194,13 +200,13 @@
                                 <img src="img/hero-bg-3.png" alt="image">
                             </div>
                             <div class="hero__card-desc">
-                                <div class="hero__card-title title">
-                                    Работаем по договору с <span>Мосводоканалом</span> 
+                                <div class="hero__card-title title animated fadeInUp">
+                                    Работаем по договору с <span>Мосводоканалом</span>
                                 </div>
-                                <div class="hero__card-subtitle subtitle">
+                                <div class="hero__card-subtitle subtitle animated fadeInUp delay-2s">
                                     Предоставляем талоны
                                 </div>
-                                <div class="hero__card-button button">
+                                <div class="hero__card-button button animated fadeInUp delay-3s">
                                     <a href="#">Заказать</a>
                                 </div>
                             </div>
@@ -219,7 +225,570 @@
     </section>
     <!-- End Hero -->
 
-    <!--  -->
+    <!-- Services -->
+    <section class="services">
+        <div class="services__header">
+            <div class="services__header-text">
+                Не ждите снегопада, подпишите договор
+                сейчас и получите <span>скидку 15%</span>
+            </div>
+            <div class="services__header-arrow">
+                <img src="img/arrow-long-right.svg" alt="icon">
+            </div>
+            <div class="services__header-button button">
+                <a href="#">Оставить заявку</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="services__container">
+                <div class="services__title title">
+                    Наши услуги
+                </div>
+                <div class="services__services row">
+                    <div class="col-md-4 col-12">
+                        <div class="services__card">
+                            <div class="services__card-img">
+                                <img src="img/order-img-1.png" alt="image">
+                            </div>
+                            <div class="services__card-desc">
+                                <div class="services__card-title">
+                                    Вывоз снега
+                                </div>
+                                <ul class="services__card-list">
+                                    <li class="services__card-item">
+                                        Мин. объем: 2 машины
+                                    </li>
+                                    <li class="services__card-item">Форма оплаты: любая</li>
+                                    <li class="services__card-item">Москва и М.О.</li>
+                                    <li class="services__card-item">Оплата после выполнения</li>
+                                    <li class="services__card-item">Погрузка производится
+                                        заказчиком</li>
+                                </ul>
+                            </div>
+                            <div class="services__card-bottom">
+                                <div class="services__card-price">
+                                    от <span>200 ₽</span>
+                                </div>
+                                <div class="services__card-button button">
+                                    <a href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="services__card ">
+                            <div class="services__card-img">
+                                <img src="img/order-img-2.png" alt="image">
+                            </div>
+                            <div class="services__card-desc">
+                                <div class="services__card-title">
+                                    Уборка, погрузка
+                                    и вывоз снега
+                                </div>
+                                <ul class="services__card-list">
+                                    <li class="services__card-item">
+                                        Мин. объем: 200 м
+                                    </li>
+                                    <li class="services__card-item">Форма оплаты: любая</li>
+                                    <li class="services__card-item">Москва и М.О.</li>
+                                    <li class="services__card-item">Оплата после выполнения</li>
+                                    <li class="services__card-item">
+                                        Полный комплекс услуг:
+                                        механизированная, ручная уборка
+                                        территории, погрузка, вывоз
+                                        и утилизация</li>
+                                </ul>
+                            </div>
+                            <div class="services__card-bottom">
+                                <div class="services__card-price">
+                                    от <span>350 ₽</span>
+                                </div>
+                                <div class="services__card-button button">
+                                    <a href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="services__card ">
+                            <div class="services__card-img">
+                                <img src="img/order-img-3.png" alt="image">
+                            </div>
+                            <div class="services__card-desc">
+                                <div class="services__card-title">
+                                    Уборка, погрузка
+                                    и вывоз снега
+                                </div>
+                                <ul class="services__card-list">
+                                    <li class="services__card-item">
+                                        Мин. объем: 200 м
+                                    </li>
+                                    <li class="services__card-item">Форма оплаты: любая</li>
+                                    <li class="services__card-item">Москва и М.О.</li>
+                                    <li class="services__card-item">Оплата после выполнения</li>
+                                    <li class="services__card-item">
+                                        Погрузка нашим экскаватором</li>
+                                </ul>
+                            </div>
+                            <div class="services__card-bottom">
+                                <div class="services__card-price">
+                                    от <span>290 ₽</span>
+                                </div>
+                                <div class="services__card-button button">
+                                    <a href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+
+    <!-- Calc -->
+    <section class="calc">
+        <div class="container">
+            <div class="calc__container">
+                <div class="calc__title title">
+                    Калькулятор
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Calc -->
+
+    <!-- Stage -->
+    <section class="stage">
+        <div class="container">
+            <div class="stage__container">
+                <div class="stage__title title">
+                    Этапы работы
+                </div>
+                <div class="stage__box row">
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="stage__item">
+                            <div class="stage__img stage__img-calc">
+                                <img src="img/stage-icon-calc.svg" alt="icon">
+                            </div>
+                            <div class="stage__name">
+                                Расчет стоимости
+                            </div>
+                            <div class="stage__arrow">
+                                <img src="img/arrow-long-right.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="stage__item">
+                            <div class="stage__img stage__img-list">
+                                <img src="img/stage-icon-list.svg" alt="icon">
+                            </div>
+                            <div class="stage__name">
+                                Подписание договора
+                            </div>
+                            <div class="stage__arrow">
+                                <img src="img/arrow-long-right.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="stage__item">
+                            <div class="stage__img stage__img-buld">
+                                <img src="img/stage-icon-bul.svg" alt="icon">
+                            </div>
+                            <div class="stage__name">
+                                Очистка территории
+                            </div>
+                            <div class="stage__arrow">
+                                <img src="img/arrow-long-right.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="stage__item">
+                            <div class="stage__img stage__img-mount">
+                                <img src="img/stage-icon-mount.svg" alt="icon">
+                            </div>
+                            <div class="stage__name">
+                                Сбор снежных масс в кучи
+                            </div>
+                            <div class="stage__arrow">
+                                <img src="img/arrow-long-right.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ol-sm-6 col-12">
+                        <div class="stage__item">
+                            <div class="stage__img stage__img-truck">
+                                <img src="img/stage-icon-truck.svg" alt="icon">
+                            </div>
+                            <div class="stage__name">
+                                Погрузка и утилизация
+                            </div>
+                            <div class="stage__arrow">
+                                <img src="img/arrow-long-right.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="stage__item ">
+                            <div class="stage__img stage__img-hand">
+                                <img src="img/stage-icon-hand.svg" alt="icon">
+                            </div>
+                            <div class="stage__name">
+                                Оплата за выполненные работы
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="stage__button button">
+                    <a href="#">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Stage -->
+
+    <!-- Video -->
+    <section class="video">
+        <div class="container">
+            <div class="video__container">
+                <div class="video__title title">
+                    Видео с места производства работ
+                </div>
+                <div class="video__box">
+                    <div class="video__img">
+                        <img src="img/video-img.png" alt="image">
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=wEEgwwtzdes" class="video__box-link" data-fancybox=""
+                        class="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Video -->
+
+    <!-- Request -->
+    <section class="request">
+        <div class="container">
+            <div class="request__container">
+                <div class="request__item">
+                    <div class="request__img">
+                        <img src="img/order-img-4.png" alt="image">
+                    </div>
+                </div>
+                <div class="request__item request__item-right">
+                    <div class="request__title title">
+                        Заявка
+                    </div>
+                    <div class="request__subtitle">
+                        на расчет стоимости
+                    </div>
+                    <div class="request__form">
+                        <form action="">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" class="phone" placeholder="Телефон">
+                            <input type="email" name="" id="" placeholder="E-mail">
+                            <input type="submit" class="request__button" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Request -->
+
+    <!-- Test -->
+    <section class="test">
+        <div class="container">
+            <div class="test__container">
+                <div class="test__header">
+                    <div class="test__title title">
+                        Отзывы клиентов
+                    </div>
+                    <div class="test__arrow">
+
+                        <div class="test__arrow-left">
+                            <div class="test__arrow-wrap">
+                                <img src="img/arrow-left-black.svg" alt="icon">
+                            </div>
+                            
+                        </div>
+                        <div class="test__arrow-right">
+                            <div class="test__arrow-wrap">
+                                <img src="img/arrow-right-black.svg" alt="icon">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="test__box">
+                    <div class="test__slider">
+                        
+                        <div class="test__item">
+                            <div class="test__card">
+                                <div class="test__card-desc">
+                                    <div class="test__card-text">
+                                        Мы проводили тендер на утилизацию снежных масс
+                                        с территории обслуживаемого нами Торгового центра. Цену которую предложила нам
+                                        Компания "Ру-Пром" была из разряда фантастики и мы по началу
+                                        не поверили, однако после первого месяца сотрудничества все сомнения отпали!
+                                        Благодарим
+                                        за помощь!
+                                    </div>
+                                    
+                                </div>
+                                <div class="test__card-author">
+                                    <div class="test__card-name">
+                                        Юлия
+                                    </div>
+                                    <div class="test__card-org">
+                                        ООО «Вербена»
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test__item">
+                            <div class="test__card">
+                                <div class="test__card-desc">
+                                    <div class="test__card-text">
+                                        Понравилось работать с Вами, будем продолжать и далее! Приятно, что можно
+                                        доверять партнерам, таким как "Ру-Пром".
+                                    </div>
+                                    
+                                </div>
+                                <div class="test__card-author">
+                                    <div class="test__card-name">
+                                        Верминский С. С.
+                                    </div>
+                                    <div class="test__card-org">
+                                        ООО «СпецАвтоСтарт»
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test__item">
+                            <div class="test__card">
+                                <div class="test__card-desc">
+                                    <div class="test__card-text">
+                                        Работаем по договору утилизации
+                                        с 2016 года, нравится то, что с нас не просят деньги вперед и не давят по
+                                        оплатам! По скорости работы тоже нареканий в целом нет.
+                                        
+                                    </div>
+                                </div>
+                                <div class="test__card-author">
+                                    <div class="test__card-name">
+                                        Алексей К.
+                                    </div>
+                                    <div class="test__card-org">
+                                        ООО «Синтез»
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test__item">
+                            <div class="test__card">
+                                <div class="test__card-desc">
+                                    <div class="test__card-text">
+                                        Мы проводили тендер на утилизацию снежных масс
+                                        с территории обслуживаемого нами Торгового центра. Цену которую предложила нам
+                                        Компания "Ру-Пром" была из разряда фантастики и мы по началу
+                                        не поверили, однако после первого месяца сотрудничества все сомнения отпали!
+                                        Благодарим
+                                        за помощь!
+                                    </div>
+                                    
+                                </div>
+                                <div class="test__card-author">
+                                    <div class="test__card-name">
+                                        Юлия
+                                    </div>
+                                    <div class="test__card-org">
+                                        ООО «Вербена»
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test__item">
+                            <div class="test__card">
+                                <div class="test__card-desc">
+                                    <div class="test__card-text">
+                                        Понравилось работать с Вами, будем продолжать и далее! Приятно, что можно
+                                        доверять партнерам, таким как "Ру-Пром".
+                                    </div>
+                                    
+                                </div>
+                                <div class="test__card-author">
+                                    <div class="test__card-name">
+                                        Верминский С. С.
+                                    </div>
+                                    <div class="test__card-org">
+                                        ООО «СпецАвтоСтарт»
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="test__item">
+                            <div class="test__card">
+                                <div class="test__card-desc">
+                                    <div class="test__card-text">
+                                        Работаем по договору утилизации
+                                        с 2016 года, нравится то, что с нас не просят деньги вперед и не давят по
+                                        оплатам! По скорости работы тоже нареканий в целом нет.
+                                        
+                                    </div>
+                                </div>
+                                <div class="test__card-author">
+                                    <div class="test__card-name">
+                                        Алексей К.
+                                    </div>
+                                    <div class="test__card-org">
+                                        ООО «Синтез»
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- End Test -->
+
+    <!-- Map -->
+    <section class="map">
+        <div class="map__container" id="map-contact"></div>
+        <div class="map__info">
+            <div class="map__info-title">
+                Адрес
+            </div>
+            <div class="map__info-adress">
+                <span>
+                    ул. Бажова 17с1
+                </span>
+                <span>
+                    Москва, Россия, 129128
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- End Map -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__header">
+                    <div class="footer__header-item">
+                        <div class="footer__header-icon footer__header-img">
+                            <img src="img/phone-icon.svg" alt="icon">
+                        </div>
+                        <div class="footer__header-phone">
+                            +7 987 654-32-10
+                        </div>
+                    </div>
+                    <div class="footer__header-item">
+                        <a href="#" class="footer__header-what footer__header-img">
+                            <img src="img/whatsup-icon.png" alt="icon">
+                        </a>
+                        <div class="footer__header-phone">
+                            +7 987 654-32-10
+                        </div>
+                    </div>
+                    <div class="footer__header-item">
+                        <a href="#" class="footer__header-link footer__header-img">
+                            <img src="img/Instagram-icon.png" alt="icon">
+                        </a>
+                        <a href="#" class="footer__header-phone">
+                            @instagram
+                        </a>
+                    </div>
+                    <div class="footer__header-item">
+                        <a href="#" class="footer__header-link footer__header-img">
+                            <img src="img/mail-icon.svg" alt="icon">
+                        </a>
+                        <a href="#" class="footer__header-phone">
+                            mail@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__main">
+                    <div class="footer__copyright">
+                        <span class="footer__copy">© Уборка и вывоз снега 2019.</span>
+                        <span class="footer__right">Все права защищены.</span>
+                    </div>
+                    <div class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#">
+                                    Услуги и цены
+                            </a>
+                        </li>
+                            <li class="footer__item">
+                                <a href="#">
+                                    Калькулятор
+                            </a>
+                        </li>
+                            <li class="footer__item">
+                                <a href="#">
+                                    Этапы работ
+                            </a>
+                        </li>
+                            <li class="footer__item">
+                                <a href="#">
+                                    Видео
+                            </a>
+                        </li>
+                            <li class="footer__item">
+                                <a href="#">
+                                    Заявка на работы
+                            </a>
+                        </li>
+                            <li class="footer__item">
+                                <a href="#">
+                                    Отзывы
+                            </a>
+                        </li>
+                            <li class="footer__item">
+                                <a href="#">
+                                    Контакты
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer__up" id="toTop">
+                    <div>
+                        <img src="img/arrow-up-black.svg" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-wrap">
+                    <a href="#" class="footer__bottom-march">
+                        Разработано в Lemarchal
+                    </a>
+                    <a href="#" class="footer__bottom-link">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                
+            </div>
+            
+        </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -232,7 +801,17 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Wowjs -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Mask -->
+    <script src="js/jquery.maskedinput.min.js"></script>
 
     <!-- Slick Slider -->
     <script src="js/slick.min.js"></script>
@@ -240,6 +819,49 @@
 
 
     <script src="js/script.js"></script>
+
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4R9PQyMDROizmuglGKqxCnsFl62st7pM"></script>
+
+    <script>
+        // Initialize Google map page Contact
+        function initMap() {
+            var map;
+            var mapConteiner = $('#map-contact')[0];
+            var mapCenter = { lat: 55.732902,    lng: 37.588801 };
+            map = new google.maps.Map(mapConteiner, {
+                center: mapCenter,
+                zoom: 16,
+                // styles: [
+                //     {
+                //         "featureType": "poi",
+                //         "stylers": [
+                //                 { "color": "#CCFFFF" }
+                //                 ]
+                //     }
+                // ]
+            });
+
+            // var popupContent = '<div class="map__map-popup"><div class="map__map-title">Адрес</div><div class="map__map-place"><span>ул. Бажова 17с1</span><span>Москва, Россия, 129128</span></div></div>'
+            var image = '../img/map-marker.png';
+            var marker = new google.maps.Marker({
+                position: { lat: 55.734052,  lng: 37.590374 },
+                map: map,
+                icon: image
+            });
+
+            // var infowindow = new google.maps.InfoWindow({
+            //     content: popupContent
+            // });
+
+            marker.addListener('click', function () {
+                $('.map__info').toggleClass('active');
+            });
+
+        };
+
+        initMap();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,119 @@
+.services {
+
+    &__header {
+        padding: 56px 0 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-main;
+
+        &-text {
+            margin-right: 88px;
+            width: 530px;
+            font-family: $font-bold, sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            line-height: 31px;
+
+            span {
+                color: $color-yellow;
+            }
+        }
+
+        &-arrow {
+            margin-right: 88px;
+            width: 24px;
+        }
+
+        &-button {
+
+            a {
+                padding: 17px 32px;
+            }
+        }
+    }
+
+    &__container {
+        padding: 102px 0;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        text-align: center;
+        color: $color-main;
+    }
+
+    &__services {
+        display: flex;
+        align-items: center;
+    }
+
+    &__card {
+        background: #FFFFFF;
+        border: 0.5px solid #E8E8E8;
+        box-shadow: 0px 26px 60px rgba(62, 65, 67, 0.05);
+        border-radius: 3px;
+
+        &-desc {
+            padding: 35px 24px 15px;
+            border-bottom: 1px solid #E8E8E8;;
+        }
+
+        &-title {
+            margin-bottom: 17px;
+            font-family: $font-bold, sans-serif;
+            font-size: 24px;
+        }
+
+        &-list {
+            padding-left: 12px;
+        }
+
+        &-item {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 7px;
+                left: -10px;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $color-yellow;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 14px;
+            }
+
+            &:last-child {
+                line-height: 30px;
+            }
+        }
+
+        &-bottom {
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-price {
+            font-size: 16px;
+
+            span {
+                font-size: 25px;
+                font-family: $font-bold, sans-serif;
+            }
+        }
+
+        &-button {
+
+             a {
+                padding: 16px 32px;
+             }
+        }
+    }
+}

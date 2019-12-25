@@ -1,0 +1,87 @@
+.stage {
+    margin-bottom: 112px;
+
+    &__title {
+        margin-bottom: 40px;
+        text-align: center;
+        color: $color-main;
+    }
+
+    &__box {
+        margin-bottom: 30px;
+
+        &>div {
+            margin-bottom: 34px;
+        }
+    }
+
+    &__item {
+        margin-left: 36px;
+        padding: 25px 21px 25px 15px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #FFFFFF;
+        border: 0.5px solid #E8E8E8;
+        box-shadow: 0px 26px 60px rgba(62, 65, 67, 0.05);
+        border-radius: 3px;
+    }
+
+    &__img {
+        width: 68px;
+        height: 68px;
+        left: -51px;
+        position: relative;
+        flex-shrink: 0;
+        background-color: $color-yellow;
+        border-radius: 3px;
+
+        &-calc {
+            padding: 12px 16px;
+        }
+
+        &-list {
+            padding: 12px 18px;
+        }
+
+        &-buld {
+            padding: 12px;
+        }
+
+        &-mount {
+            padding: 12px;
+        }
+
+        &-truck {
+            padding: 12px;
+        }
+
+        &-hand {
+            padding: 12px;
+        }
+    }
+
+    &__name {
+        font-family: $font-bold, sans-serif;
+        font-size: 20px;
+    }
+
+    &__arrow {
+        width: 24px;
+        flex-shrink: 0;
+
+        img {
+            filter: brightness(0) saturate(100%) invert(94%) sepia(8%) saturate(7219%) hue-rotate(347deg) brightness(107%) contrast(94%);
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+
+        a {
+            padding: 16px 32px;
+        }
+    }
+}
