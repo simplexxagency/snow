@@ -103,6 +103,25 @@ $(document).ready(function () {
   // Wowjs
   new WOW().init();
 
+  // // Form validate
+  // $("#validate1").validate({
+  //   errorClass: "input_error",
+  //   rules: {
+  //     email1: {
+  //       required: true,
+  //       email: true
+  //     },
+  //     name1: {
+  //       required: true,
+  //       minlength: 2
+  //     },
+  //     phone1: {
+  //       required: true,
+  //       minlength: 11
+  //     }
+  //   },
+  // });
+
   // Mask input
   jQuery(function ($) {
     $('.phone').mask('+9 (999) 999-9999');

@@ -498,10 +498,10 @@
                         на расчет стоимости
                     </div>
                     <div class="request__form">
-                        <form action="">
-                            <input type="text" placeholder="Имя">
-                            <input type="text" class="phone" placeholder="Телефон">
-                            <input type="email" name="" id="" placeholder="E-mail">
+                        <form action="" id="validate1">
+                            <input type="text" placeholder="Имя" name="name1" required>
+                            <input type="text" class="phone" placeholder="Телефон" name="phone1" required>
+                            <input type="email" name="" id="" placeholder="E-mail" name="email1" required>
                             <input type="submit" class="request__button" value="Отправить">
                         </form>
                     </div>
@@ -833,7 +833,8 @@
     <!-- Slick Slider -->
     <script src="js/slick.min.js"></script>
 
-
+    <!-- Jquery Validate -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
 
     <script src="js/script.js"></script>
 
