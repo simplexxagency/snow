@@ -34,10 +34,10 @@ body, html {
     overflow-x: hidden;
     position: relative;
     flex-direction: column;
-}
 
-body.active {
-    overflow: hidden;
+    &.active {
+        overflow: hidden;
+    }
 }
 
 // ::-webkit-scrollbar {
@@ -70,7 +70,7 @@ input, select, textarea {
 
 // ---------------------
 body {
-    background-color: $color-grey;
+    background: #F7FAFC;
     font-size: 16px;
     font-family: $font-main, sans-serif;
     color: $color-main;

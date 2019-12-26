@@ -115,6 +115,10 @@
             flex-direction: column;
         }
 
+        &__img {
+            display: none;
+        }
+
         &__item {
             width: 100%;
 

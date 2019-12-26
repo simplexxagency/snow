@@ -65,6 +65,8 @@
     &__name {
         font-family: $font-bold, sans-serif;
         font-size: 20px;
+        position: relative;
+        left: -18px;
     }
 
     &__arrow {
@@ -91,6 +93,10 @@
 
         &__name {
             font-size: 16px;
+        }
+
+        &__arrow {
+            transform: rotate(90deg);
         }
     }
 }

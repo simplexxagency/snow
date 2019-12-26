@@ -7,8 +7,11 @@
 
     &.active {
         position: fixed;
-        background-color: rgba(24, 23, 37, 0.8);
-        transition: all ease 2s;
+        // padding: 16px;
+        background: #FFFFFF;
+        box-shadow: 0px 26px 60px rgba(62, 65, 67, 0.05);
+        border-radius: 3px;
+        transition: all ease 0.5s;
     }
 
     &__container {
@@ -38,12 +41,15 @@
 
     &__logo {
         margin-right: 28px;
-        display: flex;
+        display: none;
         flex-direction: column;
         padding: 13px 16px;
         border: 2px solid rgba(255, 255, 255, 0.6);
         border-radius: 12px;
 
+        &.active {
+            display: flex;
+        }
 
         span {
             display: block;
@@ -60,6 +66,21 @@
         margin-right: 24px;
         display: flex;
         align-items: center;
+
+        &.active {
+
+            .header__phone-icon {
+                border: 1px solid rgba(24, 23, 37, 0.24);
+
+                img {
+                    filter: brightness(0) saturate(100%) invert(5%) sepia(10%) saturate(4914%) hue-rotate(210deg) brightness(98%) contrast(90%);
+                }
+            }
+
+            span {
+                color: $color-main;
+            }
+        }
 
         &-icon {
             margin-right: 13px;
@@ -86,6 +107,10 @@
             border-radius: 50%;
             border: 1px solid rgba(255, 255, 255, 0.6);
 
+            &.active {
+                border: 1px solid rgba(24, 23, 37, 0.24);
+            }
+
             &:not(:last-child) {
                 margin-right: 16px;
             }
@@ -111,6 +136,10 @@
             color: #fff;
             font-family: $font-bold, sans-serif;
             font-weight: 600;
+
+            &.active {
+                color: $color-main;
+            }
 
             span {
 
@@ -146,11 +175,16 @@
             position: relative;
             transform-origin: left;
 
+            &.colored {
+                background: $color-main;
+            }
+
             &.active:nth-child(1) {
                 transform: rotate(45deg) translate(0px, 0px);
                 top: 0px;
                 left: 0px;
                 width: 18px;
+                background: #fff;
             }
 
             &.active:nth-child(2) {
@@ -162,6 +196,7 @@
                 top: 0px;
                 left: 0px;
                 width: 18px;
+                background: #fff;
             }
         }
     }
@@ -171,7 +206,7 @@
         height: 100vh;
         position: absolute;
         right: -120%;
-        top: 0;
+        top: -24px;
         background: rgba(24, 23, 37, 0.64);
 
 
@@ -181,9 +216,12 @@
             top: -24px;
             z-index: 2;
             transition: all ease 1s;
+            
         }
 
-        
+        &.long {
+            height: 101vh;
+        }
     }
 
     &__menu {
@@ -196,6 +234,11 @@
         width: 40%;
         height: 100%;
         background: $color-main;
+
+        &.active {
+            animation: fadeInRight 0.5s both 0.5s;
+        }
+        
 
         &-list {
             display: flex;
@@ -218,7 +261,7 @@
             }
             
             &:not(:last-child) {
-                margin-bottom: 10px;
+                margin-bottom: 20px;
             }
 
         }
@@ -313,6 +356,11 @@
                     font-size: 26px;
                 }
             }
+
+            &-list {
+                text-align: unset;
+                align-items: center;
+            }
         }
 
         &__logo {
@@ -344,11 +392,11 @@
     .header {
 
         &__logo {
-            margin-right: 10px;
 
-            span {
-                font-size: 14px;
+            &.active {
+                display: none;
             }
+            
         }
 
         &__phone {

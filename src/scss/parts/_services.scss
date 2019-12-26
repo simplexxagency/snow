@@ -60,7 +60,7 @@
     &__card {
         background: #FFFFFF;
         border: 0.5px solid #E8E8E8;
-        box-shadow: 0px 26px 60px rgba(62, 65, 67, 0.05);
+        // box-shadow: 0px 26px 60px rgba(62, 65, 67, 0.05);
         border-radius: 3px;
 
         &-desc {
@@ -114,6 +114,7 @@
             span {
                 font-size: 25px;
                 font-family: $font-bold, sans-serif;
+                font-weight: 600;
             }
         }
 
