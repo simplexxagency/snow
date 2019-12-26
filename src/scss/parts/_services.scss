@@ -1,11 +1,19 @@
 .services {
 
+    &__wrap {
+        background-color: $color-main;
+
+        .container {
+            max-width: 100%;
+        }
+    }
+
     &__header {
         padding: 56px 0 58px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $color-main;
+        
 
         &-text {
             margin-right: 88px;
@@ -113,7 +121,79 @@
 
              a {
                 padding: 16px 32px;
+                white-space: nowrap;
              }
+        }
+    }
+}
+
+@media all and (max-width: 991px) {
+    .services {
+
+        .container {
+            max-width: 100%;
+        }
+
+        &__header {
+            justify-content: space-between;
+
+            &-text {
+                margin-right: 10px;
+                font-size: 20px;
+            }
+
+            &-arrow {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .services {
+
+        &__header {
+            flex-direction: column;
+            align-items: center;
+
+            &-text {
+                margin-bottom: 20px;
+                margin-right: 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            &-arrow {
+                transform: rotate(90deg);
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+        }
+
+        &__services {
+
+            &>div {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 577px) {
+    .services {
+
+        &__card {
+
+            &-price {
+
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &__container {
+            padding: 102px 0 72px;
         }
     }
 }

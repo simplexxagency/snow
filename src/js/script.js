@@ -63,6 +63,21 @@ $(document).ready(function () {
     // ]
   });
 
+  // Animation in section Hero
+  $(".hero__slider").on("beforeChange", function() {
+
+    $('.hero__card-title').removeClass('animated fadeInDown').hide();
+    $('.hero__card-subtitle').removeClass('animated fadeInUp').hide();
+    $('.hero__card-button').removeClass('animated fadeInUp').hide();
+    setTimeout(() => {    
+      $('.hero__card-title').addClass('animated fadeInDown').show();
+      $('.hero__card-subtitle').addClass('animated fadeInUp').show();
+      $('.hero__card-button').addClass('animated fadeInUp').show();
+
+    }, 100);
+
+  })
+
   setProgress1(0);
 
 
@@ -102,20 +117,20 @@ $(document).ready(function () {
     swipe: true,
     nextArrow: $('.test__arrow-right'),
     prevArrow: $('.test__arrow-left'),
-    // responsive: [
-    //   {
-    //     breakpoint: 1199,
-    //     settings: {
-    //       slidesToShow: 3,
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 767,
-    //     settings: {
-    //       slidesToShow: 2,
-    //     }
-    //   }
-    // ]
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 577,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
   // Anchor to top
