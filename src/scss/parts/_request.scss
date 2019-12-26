@@ -76,6 +76,10 @@
                 padding: 18px;
                 background: #F8DE15;
                 border-radius: 3px;
+
+                &:hover {
+                    background: #E1C917;
+                }
             }
         } 
     }

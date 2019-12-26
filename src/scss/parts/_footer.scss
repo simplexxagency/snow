@@ -25,6 +25,7 @@
             justify-content: center;
             align-items: center;
             flex-shrink: 0;
+            cursor: pointer;
         }
 
         &-icon {
@@ -74,6 +75,10 @@
         a {
             color: #fff;
             white-space: nowrap;
+
+            &:hover {
+                color: $color-yellow;
+            }
         }
     }
 
@@ -110,6 +115,10 @@
         border-radius: 50%;
         background-color: $color-yellow;
         cursor: pointer;
+
+        &:hover {
+            background-color: #E1C917;
+        }
 
         &.active {
             display: flex;

@@ -89,6 +89,7 @@
             padding: 14px;
             border-radius: 50%;
             border: 1px solid rgba(255, 255, 255, 0.6);
+            cursor: pointer;
         }
 
         span {
@@ -163,6 +164,19 @@
             align-items: center;
             width: 26px;
             height: 14px;
+
+            &:hover {
+
+                .header__mobile-line:nth-child(1) {
+                    position: relative;
+                    top: -1px;
+                }
+
+                .header__mobile-line:nth-child(3) {
+                    position: relative;
+                    top: 1px;
+                }
+            }
         }
 
         &-line {
@@ -174,6 +188,19 @@
             opacity: 1;
             position: relative;
             transform-origin: left;
+
+            // &:hover {
+
+            //     &:nth-child(1) {
+            //         position: relative;
+            //         top: -1px;
+            //     }
+
+            //     &:nth-child(3) {
+            //         position: relative;
+            //         top: 1px;
+            //     }
+            // }
 
             &.colored {
                 background: $color-main;
@@ -308,6 +335,7 @@
 
             &-icon {
                 margin-right: 0;
+                
             }
 
             &:hover {
