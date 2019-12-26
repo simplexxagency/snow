@@ -174,13 +174,16 @@ $(document).ready(function () {
   });
 
   // Subscribe pop-up
-  $('#validate1').on('submit', function() {
+  $('#validate1').on('submit', function(e) {
+    e.preventDefault();
     if (true) {
       $('body').addClass('active');
       $('.pop-up-subscribe').removeClass('passive');
-    } else {
-      $('body').removeClass('active');
-      $(this).closest('.pop-up-mark').addClass('passive');
-    }
+    } 
   });
+
+  $('.cover, .wrapper-close-pop-up').on('click', function () {
+    $('body').removeClass('active');
+    $(this).closest('.pop-up-mark').addClass('passive');
+});
 });
