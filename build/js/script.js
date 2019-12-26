@@ -64,12 +64,12 @@ $(document).ready(function () {
   });
 
   // Animation in section Hero
-  $(".hero__slider").on("beforeChange", function() {
+  $(".hero__slider").on("beforeChange", function () {
 
     $('.hero__card-title').removeClass('animated fadeInDown').hide();
     $('.hero__card-subtitle').removeClass('animated fadeInUp').hide();
     $('.hero__card-button').removeClass('animated fadeInUp').hide();
-    setTimeout(() => {    
+    setTimeout(() => {
       $('.hero__card-title').addClass('animated fadeInDown').show();
       $('.hero__card-subtitle').addClass('animated fadeInUp').show();
       $('.hero__card-button').addClass('animated fadeInUp').show();
@@ -155,7 +155,7 @@ $(document).ready(function () {
   // Anchor to top
   $(window).scroll(function () {
 
-    if ($(this).scrollTop() > 500 )  {
+    if ($(this).scrollTop() > 500) {
 
       $('#toTop').addClass('active');
 
@@ -171,5 +171,16 @@ $(document).ready(function () {
 
     $('body,html').animate({ scrollTop: 0 }, 800);
 
+  });
+
+  // Subscribe pop-up
+  $('#validate1').on('submit', function() {
+    if (true) {
+      $('body').addClass('active');
+      $('.pop-up-subscribe').removeClass('passive');
+    } else {
+      $('body').removeClass('active');
+      $(this).closest('.pop-up-mark').addClass('passive');
+    }
   });
 });

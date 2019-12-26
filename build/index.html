@@ -502,7 +502,7 @@
                             <input type="text" placeholder="Имя" name="name1" required>
                             <input type="text" class="phone" placeholder="Телефон" name="phone1" required>
                             <input type="email" name="" id="" placeholder="E-mail" name="email1" required>
-                            <input type="submit" class="request__button" value="Отправить">
+                            <input type="submit" class="request__button js-subscribe-modal" value="Отправить">
                         </form>
                     </div>
                 </div>
@@ -807,6 +807,35 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- Popup Subscribe -->
+    <div class="pop-up-subscribe pop-up-mark content passive">
+        <div class="cover"></div>
+        <div class="pop-up col-12">
+
+            <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="pop-up-modal-subscribe subscribe__modal">
+                        <div class="subscribe__modal-title">
+                            Спасибо за заявку!
+                        </div>
+                        <div class="subscribe__modal-media">
+                            Наш менеджер на протяжении n-времени свяжется с Вами!
+                        </div>
+                        <div class="wrapper-close-pop-up">
+                            <div class="close-pop-up">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Popup Subscribe -->
+
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -850,14 +879,6 @@
             map = new google.maps.Map(mapConteiner, {
                 center: mapCenter,
                 zoom: 17,
-                // styles: [
-                //     {
-                //         "featureType": "poi",
-                //         "stylers": [
-                //                 { "color": "#CCFFFF" }
-                //                 ]
-                //     }
-                // ]
             });
 
             // var popupContent = '<div class="map__map-popup"><div class="map__map-title">Адрес</div><div class="map__map-place"><span>ул. Бажова 17с1</span><span>Москва, Россия, 129128</span></div></div>'
