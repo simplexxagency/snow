@@ -206,6 +206,9 @@ body {
       display: block;
       background: rgba(24, 23, 37, 0.1); }
 
+.fa-ruble-sign {
+  font-size: 21px; }
+
 @media all and (max-width: 767px) {
   .title {
     font-size: 30px; }
