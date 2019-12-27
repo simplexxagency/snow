@@ -19,10 +19,9 @@ $(document).ready(function () {
     $headerMain.toggleClass('active', top > ($hero.height() * 0.15));
     if ($headerMain.hasClass('active')) {
       $headerLogo.removeClass('active');
-      $headerPhone.addClass('active');
       $headerText.addClass('active');
-      $headerItem.addClass('active');
-      $headerLine.addClass('colored');
+      // $headerItem.addClass('active');
+      // $headerLine.addClass('colored');
 
       if ($navMenu.hasClass('active')) {
         $headerText.removeClass('active');
@@ -31,10 +30,9 @@ $(document).ready(function () {
       }
     } else {
       $headerLogo.addClass('active');
-      $headerPhone.removeClass('active');
       $headerText.removeClass('active');
-      $headerItem.removeClass('active');
-      $headerLine.removeClass('colored');
+      // $headerItem.removeClass('active');
+      // $headerLine.removeClass('colored');
     }
   });
 
