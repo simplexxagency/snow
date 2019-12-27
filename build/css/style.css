@@ -215,6 +215,10 @@ body {
   .subtitle {
     font-size: 20px; } }
 
+@media all and (max-width: 577px) {
+  .fa-ruble-sign {
+    font-size: 16px; } }
+
 .pop-up-mark {
   width: 100vw;
   height: 100vh;
