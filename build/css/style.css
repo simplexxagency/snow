@@ -193,8 +193,6 @@ body {
   display: block;
   font-family: "gothamprobold", sans-serif;
   background: #F8DE15;
-  -webkit-box-shadow: 0px 32px 80px rgba(248, 222, 21, 0.24);
-  box-shadow: 0px 32px 80px rgba(248, 222, 21, 0.24);
   border-radius: 3px; }
   .button a:hover {
     position: relative; }
@@ -833,6 +831,8 @@ body {
       .header__right-text span.passive {
         display: none; }
   .header__mobile-btn {
+    position: relative;
+    right: 2px;
     cursor: pointer; }
   .header__mobile-icon {
     display: -webkit-box;
@@ -1094,7 +1094,9 @@ body {
     -webkit-animation: fadeInUp 1s both 2s;
     animation: fadeInUp 1s both 2s; }
     .hero__card-button a {
-      padding: 17px 50px; }
+      padding: 17px 50px;
+      -webkit-box-shadow: 0px 32px 80px rgba(248, 222, 21, 0.24);
+      box-shadow: 0px 32px 80px rgba(248, 222, 21, 0.24); }
   .hero__card-lines div {
     width: 1px;
     height: 100%;
