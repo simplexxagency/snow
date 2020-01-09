@@ -2,6 +2,45 @@
 
 $(document).ready(function () {
 
+  // Menu in Header
+  let $btn = $('.header__mobile-line');
+  let $navMenu = $('.header__fade');
+
+  $('.header__mobile-btn').on('click', function () {
+    if (!($btn.hasClass('active'))) {
+      console.log('1');
+      $btn.addClass('active');
+      $navMenu.addClass('active');
+      $('body, html').addClass('active');
+      $('.header__right-text span').toggleClass('passive');
+
+      if ($navMenu.hasClass('active')) {
+        $headerText.removeClass('active');
+        $('.header__menu').addClass('active');
+      }
+
+    } else {
+      $btn.removeClass('active');
+      $navMenu.removeClass('active');
+      $('body, html').removeClass('active');
+      $('.header__right-text span').toggleClass('passive');
+
+      if (!($navMenu.hasClass('active')) && $headerMain.hasClass('active')) {
+        $headerText.addClass('active');
+      }
+      if (!($navMenu.hasClass('active'))) {
+        $('.header__menu').removeClass('active');
+      }
+    }
+
+  });
+
+  $('.header__menu-item a').on('click', function () {
+    $('body, html').removeClass('active');
+    $navMenu.removeClass('active');
+    $btn.removeClass('active');
+  });
+
   // Header bg color
   let $headerMain = $('.header');
   let $hero = $('.hero');
@@ -16,7 +55,7 @@ $(document).ready(function () {
 
     // $header.toggleClass('active', top > $header.height());
 
-    $headerMain.toggleClass('active', top > ($hero.height() * 0.15));
+    $headerMain.toggleClass('active', top > $headerMain.height());
     if ($headerMain.hasClass('active')) {
       $headerLogo.removeClass('active');
       $headerText.addClass('active');
@@ -105,43 +144,7 @@ $(document).ready(function () {
   setProgress1(0);
 
 
-  // Menu in Header
-  let $btn = $('.header__mobile-line');
-  let $navMenu = $('.header__fade');
-
-  $('.header__mobile-btn').on('click', function () {
-    if (!($btn.hasClass('active'))) {
-      $btn.addClass('active');
-      $navMenu.addClass('active');
-      $('body, html').addClass('active');
-      $('.header__right-text span').toggleClass('passive');
-
-      if ($navMenu.hasClass('active')) {
-        $headerText.removeClass('active');
-        $('.header__menu').addClass('active');
-      }
-
-    } else {
-      $btn.removeClass('active');
-      $navMenu.removeClass('active');
-      $('body, html').removeClass('active');
-      $('.header__right-text span').toggleClass('passive');
-
-      if (!($navMenu.hasClass('active')) && $headerMain.hasClass('active')) {
-        $headerText.addClass('active');
-      }
-      if (!($navMenu.hasClass('active'))) {
-        $('.header__menu').removeClass('active');
-      }
-    }
-
-  });
-
-  $('.header__menu-item a').on('click', function () {
-    $('body, html').removeClass('active');
-    $navMenu.removeClass('active');
-    $btn.removeClass('active');
-  });
+  
 
   // Wowjs
   new WOW().init();
